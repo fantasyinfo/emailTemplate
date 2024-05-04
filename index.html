@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 40px;
+            height: auto;
+        }
+        .receipt-text {
+            font-size: 28px;
+            font-weight: normal;
+        }
+        /* Boxes */
+        .boxes {
+            display: flex;
+            /* justify-content: space-between; */
+            background-color: #f8f8f8;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size:12px;
+        }
+        .left-box{
+            flex:1;
+        }
+        .right-box{
+            flex:1;
+        }
+
+
+        .two_col{
+            display:flex;
+        
+            align-items: center;
+        }
+
+
+
+
+
+
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+             padding: 0px 10px; 
+            text-align: left;
+            /* border-bottom: 1px solid #ddd; */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .product_img{
+            height: 100px;
+            
+        }
+        /* Total */
+        .total_footer {
+           font-size: 12px;
+     
+           padding:10px;
+        }
+
+
+
+
+
+
+        /* Responsive */
+        @media screen and (max-width: 600px) {
+            .container {
+                /* width: 100%; */
+                padding: 10px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: center;
+            }
+            .boxes {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            .two_col{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/833px-Apple_logo_black.svg.png" alt="Logo">
+            <div class="receipt-text">Receipt</div>
+        </div>
+        <div class="boxes">
+            <div class="left-box">
+                <div style="margin:10px 0;">
+                    <p style="margin:0;">APPLE ID</p>
+                    <p style="font-weight: 600;margin:0;">1424</p>
+                </div>
+                <div style="margin:10px 0;">
+                    <p style="margin:0;">DATE</p>
+                    <p style="font-weight: 600;margin:0;">Mar, 17 2024</p>
+                </div>
+                <div class="two_col">
+                    <div style="margin:10px 0;flex:1;">
+                        <p style="margin:0;">ORDER ID</p>
+                        <p style="font-weight: 600;margin:0;">#14541</p>
+                    </div>
+                    <div style="margin:10px 0;flex:1;">
+                        <p style="margin:0;">DOCUMENT NO</p>
+                        <p style="font-weight: 600;margin:0;">#85KL01</p>
+                    </div>
+                </div>
+             
+            </div>
+            <div class="right-box">
+                <div style="margin:20px 0;">
+                    <p style="margin:0;">BILLED TO</p>
+                    <p style="font-weight: 600;margin:0;line-height: normal;">Jhon Doe (Apple Pay)</p>
+                    <p style="font-weight: 600;margin:0;line-height: normal;">House No 7th, Street New</p>
+                    <p style="font-weight: 600;margin:0;line-height: normal;">ABC building</p>
+                    <p style="font-weight: 600;margin:0;line-height: normal;">India</p>
+                </div>
+               
+            </div>
+        </div>
+
+
+        <!-- Header Box ends -->
+
+
+
+
+
+
+
+
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th colspan="3" style="font-weight: 600;">iCloud+</th>
+                </tr>
+                <!-- product 1 -->
+                <tr style="border-bottom: 1px solid #f2f2f2;">
+                    <td style="width: 15%;padding: 5px;">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2m8VHwhGWwjDho0clYmb4Ri1tE8nOtFZ8pG40_WhmWPMi8JxEsMsNC7oUbBGtZwxtG82D4_9h4dwLdA8IEInN5KoQIasG18bpxCReq20YCC1oeOnaCFHHrj36E7KljRFlPC6qHM8vUeNa5EzUVnCDzhEz_ROU2bn2RZT7PANmtufGxKl7nFdkOfz2pmw/s1600/pngwing.com.png" 
+                        
+                        class="product_img"
+                        >
+                    </td>
+                    <td>
+                        <p style="font-weight: 600;margin:0;font-size: 12px;">iCloud+ with 2 TB of Storage</p>
+                        <p style="margin:0;font-size: 12px;">Monthly</p>
+                        <p style="margin:0;font-size: 12px;">Renews Apr. 17,2024</p>
+                    </td>
+                    <td style="margin:0; text-align: right;font-size: 12px;font-weight: 600;">$12.99</td>
+                </tr>
+                <!-- product 2 -->
+                <tr  style="border-bottom: 1px solid #f2f2f2;">
+                    <td style="width: 15%;padding: 5px;">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGv2Ob1iL7de-VlwltCUlpN7WeJmKxtG-ptAsSqrRemJYyZ26uENnUF1I7GZnsGziRzJDma_lnVNo7e-fD_gLK3Y0lsQ6ieNEe2YL6eqRUg1j9hgxN823qffAOAkncIlNuG96jYvJ0yX6YXmyXWTwlltKH4azub4QFZ_PtdV9sM19qfqTCvCBghGFDyp8/s1600/pngwing.com%20(1).png" 
+                        
+                        class="product_img"
+                        >
+                    </td>
+                    <td>
+                        <p style="font-weight: 600;margin:0;font-size: 12px;">Apple Smart Watch </p>
+                        <p style="margin:0;font-size: 12px;">Fixed Cost</p>
+                        <p style="margin:0;font-size: 12px;">2+ Years of Warranty</p>
+                    </td>
+                    <td style="margin:0; text-align: right;font-size: 12px;font-weight: 600;">$199.99</td>
+                </tr>
+            </table>
+        </div>
+      
+        <div class="total_footer">
+            <table>
+                <tr>
+                    <td  style="text-align: right;width: 85%;padding-top:10px;">Subtotal</td>
+                    <td  style="text-align: right;width: 15%;font-weight: bold;padding-top:10px;">$12</td>
+                </tr>
+                <tr >
+                    <td  style="text-align: right;width: 85%;padding-top:10px;">GST/HST</td>
+                    <td  style="text-align: right;width: 15%;font-weight: bold;padding-top:10px;">$4.65</td>
+                </tr>
+             
+            </table>
+            <table>
+                <tr style="border-top:0.01px solid rgb(131, 131, 131);border-bottom: 0.01px solid rgb(131, 131, 131);">
+                    <td style="text-align: right;width: 70%;padding:10px;border-right:0.01px solid rgb(131, 131, 131);">TOTAL</td>
+                    <td style="text-align: right;width: 30%;font-weight: bold;padding:10px;">$145.68</td>
+                </tr>
+                
+            </table>
+      
+           
+        </div>
+        <div class="policy" style="font-size:12px;text-align: center;">
+            <p>If you have any questions about your bill, please <a href='/'>contact support</a>. This email confirms payment for the iCloud+ plan listed above. You will be billed each plan period until you cancel by <a href='/'>downgrading</a> to the storage plan from your iOS device, Mac or PC.</p>
+            <p>You may contact Apple for full refund withing 15 days of a monthly subscriptiong upgrade or withing 45 days of yearly payment. Partial refunds are availbale where required by law.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset styles */
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        background-color: #f7f7f7;
+      }
+      h1,h2,h3,h4,h5,h6{
+        margin:0;
+        font-size: 14px;
+      }
+      p{
+        font-size: 12px;
+        margin:0;
+      }
+      /* Container */
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        position: relative;
+      }
+
+      .black-bg {
+        position: absolute;
+        
+        background-color: #2f2f2f;
+        width: 30%;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding-right:20px;
+        padding-left:5px;
+      }
+      .black-bg .left_header_white{
+        color:white;
+        text-align: right;
+        position: absolute;
+        top:10%;
+      }
+      .black-bg .left_header_white .item{
+        margin-bottom: 10px;
+      }
+      .black-bg .left_header_white .item h4{
+        font-size: 14px;
+      }
+      .black-bg .left_header_white .item h4{
+        font-size: 13px;
+      }
+
+
+
+
+
+
+
+
+      .logo{
+        width: 100%;
+      }
+      .header{
+        max-width: 70%;
+        width: 100%;
+        height: 30vh;
+      }
+      .flex_2{
+        display: flex;
+        padding:0 10px;
+        margin-top:30px;
+      }
+
+
+      .flex_2 .left_side, .flex_2 .right_side{
+        flex:1;
+      }
+
+
+      .table_body{
+        height: 100vh;
+        width: 100%;
+         background-color: #fff; 
+        z-index: 2; 
+  position: relative; 
+  margin-top:30px;
+      }
+
+      .shopping_table{
+        width: 100%;
+        border-collapse: collapse;
+      
+      }
+ 
+
+      .shopping_table thead tr{
+        background-color: #F8B916;
+      }
+      .shopping_table th, .shopping_table td{
+        margin:0;
+        padding:0;
+        border:0;
+        outline: 0;
+        padding:5px;
+        font-size:12px;
+      }
+
+      .footer_date {
+        margin-top:20px;
+      }
+
+      /* Responsive */
+      @media screen and (max-width: 600px) {
+        .container {
+          /* width: 100%; */
+          padding: 10px;
+        }
+        .table_body{
+          margin-top:180px;
+        }
+        .logo img{
+          height: 44px;
+        }
+        .flex_2{
+          flex-direction: column;
+          row-gap: 20px;
+        }
+        .black-bg .left_header_white{
+          padding-right: 5px;
+        }
+        .black-bg .left_header_white .item h4{
+          font-size: 12px;
+        }
+      
+      }
+    </style>
+  </head>
+  <body>
+    <!-- https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho3oem2697oHRjgJULTha03sCK4x7ntpij_TJ5CcM5MmZBrvrlWkZUxA01MU3Hj_J_x7eUXE-L9_7FlShBMym8VZWvLJXad58vFuzLV6XeFYAmJVIrHCXGjD-ajmGKXZr1dRV7nbN2U3LbKwH6A-bStiZhZbRJeVVq12Y5ApYUXrkEjBW6CD1XQmex_vt4/s320/The%20C0-op%20Logo..png -->
+    <div class="container">
+      <div class="black-bg">
+        <div class="left_header_white">
+            <div class="item">
+                <h3>Commercial Invoice 007564</h3>
+                <h4>Apr 3, 2024</h4>
+            </div>
+            <div class="item">
+                <h3>COUNTRY OF EXPORT</h3>
+                <h4>Australia</h4>
+            </div>
+
+           
+            <div class="item"> 
+                <h3>PAYMENT TERMS</h3>
+                <h4>Paid</h4>
+            </div> 
+           
+        </div>
+      
+      </div>
+      <div class="header">
+        <div class="logo">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho3oem2697oHRjgJULTha03sCK4x7ntpij_TJ5CcM5MmZBrvrlWkZUxA01MU3Hj_J_x7eUXE-L9_7FlShBMym8VZWvLJXad58vFuzLV6XeFYAmJVIrHCXGjD-ajmGKXZr1dRV7nbN2U3LbKwH6A-bStiZhZbRJeVVq12Y5ApYUXrkEjBW6CD1XQmex_vt4/s320/The%20C0-op%20Logo..png"
+            alt=""
+          />
+        </div>
+        <div class="flex_2">
+          <div class="left_side">
+            <h3>RECIPIENT/IMPORTER</h3>
+            <p>Aaronp</p>
+            <p>54 Roadway</p>
+            <p>Sandy ABC</p>
+            <p>Australia</p>
+            <p>Tel. 01345679</p>
+          </div>
+          <div class="right_side">
+            <h3>EXPORTER</h3>
+            <p>THE CO-OP</p>
+            <p>PO BOX 74</p>
+            <p>PAYNESVILLE, VIC, 3880</p>
+            <p>Australia</p>
+            <p>Tel. 1300833538</p>
+            <p>admin@theco-op.com.au</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="table_body">
+      
+        <table class="shopping_table">
+          <thead>
+
+            <tr>
+                <th style="width: 35%;">
+                    ITEMS
+                </th>
+                <th style="width: 15%;">
+                    TARRIF CODE
+                </th>
+                <th style="width: 15%;">
+                    ORIGIN
+                </th style="width: 15%;">
+                <th>
+                    PRICE
+                </th style="width: 15%;">
+                <th>
+                    QTY
+                </th>
+                <th style="width: 15%;">
+                    ITEM TOTAL
+                </th>
+            </tr>
+          </thead>
+          <tbody style="background-color: #fff;">
+            <tr>
+              <td>12V Pump Pressure Regultor - 5D 3/4
+                inlet quick connect, 1/2 BSP male outlet</td>
+                <td>842449</td>
+                <td>AU</td>
+                <td>$49.68</td>
+                <td>1</td>
+                <td>$49.68</td>
+            </tr>
+            <tr>
+              <td>12V Pump Pressure Regultor - 5D 3/4
+                inlet quick connect, 1/2 BSP male outlet</td>
+                <td>842449</td>
+                <td>AU</td>
+                <td>$49.68</td>
+                <td>1</td>
+                <td>$49.68</td>
+            </tr>
+            <tr>
+              <td>12V Pump Pressure Regultor - 5D 3/4
+                inlet quick connect, 1/2 BSP male outlet</td>
+                <td>842449</td>
+                <td>AU</td>
+                <td>$49.68</td>
+                <td>1</td>
+                <td>$49.68</td>
+            </tr>
+            <!-- totalrow -->
+            <tr style="border-top:2px solid #F8B916;">
+              <td colspan="2">I declare all the information contained
+                in this invoice to be true and correct.</td>
+               
+                <td></td>
+                <td style="border-bottom:2px solid #F8B916;" colspan="2">VALUE (AUD)</td>
+                <td style="border-bottom:2px solid #F8B916;">$160.00</td>
+                
+            
+             
+            </tr>
+          </tbody>
+        </table>
+     
+        <div class="footer_date">
+          <h3>DATE: Apr 4, 2024</h3>
+          <h3> STEPHEN WELLS</h3>
+         
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>
